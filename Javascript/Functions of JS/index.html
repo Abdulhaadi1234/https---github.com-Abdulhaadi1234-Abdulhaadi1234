@@ -1,20 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
     <button onclick="Addition()">add</button>
+    <button onclick="Subtraction()">sub</button>
     <p id="add"></p>
+    <p id="sub"></p>
     <script>
         var a = 15;
-        function Addition(){
+        function Addition() {
             var b = 10;
             var sum = a + b;
             document.getElementById("add").innerHTML = sum;
         }
+        function Subtraction() {
+            var c = 11;
+            var minus = a - c;
+            document.getElementById("sub").innerHTML = minus;
+        }
     </script>
 </body>
+
 </html>
