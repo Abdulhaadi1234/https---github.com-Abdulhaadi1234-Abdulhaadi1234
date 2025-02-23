@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="Student"></p>
+    <script>
+        class abc{
+            constructor(name,year){
+                this.name=name;
+                this.year=year;
+            }
+            age(){
+                let date=new Date();
+                return date.getFullYear()-this.year;
+            }
+        }
+        a=new abc("abdul haadi",2010);
+        document.getElementById("Student").innerHTML="my name is " + a.name + ". I born in " + a.year + ". my age is " + a.age();
+    </script>
+</body>
+</html>
