@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button type="button" onclick="asscending()"> asscending </button>
+    <button type="button" onclick="desscending()"> desscending </button>
+    <p id="a"></p>
+    <script>
+        var b=[40,100,1,5,25,10];
+        document.getElementById("a").innerHTML=b;
+        function asscending(){
+            b.sort(function(a,b){return a-b});
+            document.getElementById("a").innerHTML=b;
+        }
+        function desscending(){
+            b.sort(function(a,b){return b-a});
+            document.getElementById("a").innerHTML=b;          
+        }
+    </script>
+</body>
+</html>
