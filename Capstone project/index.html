@@ -24,6 +24,17 @@
             background-color: aqua;
             color: blueviolet;
         }
+        .carousel-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 300px; /* Adjust based on your image height */
+        }
+        .myslides {
+            display: none;
+            max-height: 100%; /* Ensure images fit within container */
+            max-width: 100%;
+        }
     </style>
 </head>
 <body>
@@ -40,5 +51,10 @@
         <a href="red bull.html">Red Bull</a>
         <a href="williams.html">Williams</a>
     </div>
+        <section>
+            <img class="mySlides" src="F1-launch.png" height="400">
+            <img clss="mySlides" src="d2ba52a58ed40260cbc6c7660c69e17fc28f7be9.png" height="400">
+        </section>
+    <script src="script.js"></script>
 </body>
 </html>
